@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/pjsm.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <form>
+      <select name="test[]" multiple="multiple" class="multiselect">
+	<option>Test 1</option>
+	<option>Test 2</option>
+	<option>Test 3</option>
+	<option>Test 4</option>
+	<option>Test 4</option>
+	<option>Test 4</option>
+	<option>Test 4</option>
+      </select>
+      <input type="submit" value="submit"/>
+    </form>
+
+    <script src="js/pjsm.js"></script>
+    <script>
+     let list = [];
+     document.querySelectorAll('.multiselect').forEach(function(obj, index){
+       list.push(new Multiselect(obj));
+     });
+    </script>
+  </body>
+</html>

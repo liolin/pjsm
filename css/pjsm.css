@@ -1,0 +1,59 @@
+/*
+ * A pure JavaScript multiselect library.
+ *
+ * @author Olivier Lischer <olivier.lischer@liolin.ch>
+ * @version 0.1.0
+ */
+
+.pjsm-container {
+    background: transparent url('../img/switch.svg') no-repeat 50% 50%;
+    width: 400px;
+    height: 200px;
+    display: flex;
+}
+
+.pjsm-available {
+    width: 45%;
+}
+
+.pjsm-middle {
+    width: 10%;
+}
+
+.pjsm-enabled {
+    width: 45%;
+}
+
+.pjsm-list {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    /* -webkit-transition: border linear 0.2s, box-shadow linear 0.2s; */
+    /* -moz-transition: border linear 0.2s, box-shadow linear 0.2s; */
+    /* -ms-transition: border linear 0.2s, box-shadow linear 0.2s; */
+    /* -o-transition: border linear 0.2s, box-shadow linear 0.2s; */
+    /* transition: border linear 0.2s, box-shadow linear 0.2s;  */
+    
+    position: relative;
+    height: 200px;
+    overflow-y: overlay;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pjsm-list li {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #eee;
+    padding: 10px;
+}
+
+.pjsm-list li:hover {
+    background-color: #08c
+}
